@@ -1,0 +1,66 @@
+.countries__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: calc(100vw - 85%);
+    background: var(--dark-blue);
+    box-shadow: 0 2px 7px 2px #00000029;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    transition: all 1s ease;
+}
+
+.countries__item:hover {
+    cursor: pointer;
+}
+
+.countries__item__flag {
+    height: 200px;
+    width: 100%;
+}
+
+.countries__item__flag img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.countries__item__info {
+    padding: 10%;
+    font-size: var(--font-size-home-items);
+    min-height: 150px;
+}
+
+.countries__item__info p {
+    line-height: 1.5rem;
+}
+
+.countries__item__info__name {
+    font-family: var(--font-family);
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.countries__item__info__capital, .countries__item__info__region, .countries__item__info__population {
+    font-weight: 600;
+}
+
+.countries__item__info__region>span, .countries__item__info__capital>span, .countries__item__info__population>span {
+    font-weight: normal;
+}
+
+@media screen and (max-width: 56rem) {
+    .countries__item__flag {
+        height: unset;
+    }
+
+    div.home__head_search, div.countries__item {
+        width: unset;
+    }
+
+    .home__countries {
+        flex-direction: row;
+    }
+}
