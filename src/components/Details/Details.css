@@ -39,7 +39,7 @@
     font-weight: 600;
 }
 
-.deails__box {
+.details__box {
     display: flex;
     justify-content: space-between;
     align-items: center;
